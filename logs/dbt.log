@@ -1,0 +1,47 @@
+==================== 2026-11-23T10:04:33.486758Z | 01a207dd-4d44-7fd2-b703-a35a1e6951a2 ====================
+10:04:33.487098 [info ]: Installing dbt project and profile setup
+10:04:33.550384 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+10:04:33.550955 [info ]: Success Project created successfully!
+10:04:33.551172 [info ]: Info Project name: jaffle_shop
+10:04:33.551414 [info ]: Info Project directory: jaffle_shop
+10:05:27.678437 [info ]: Info Using existing profile 'snowflake-poc2-dbt'
+10:05:27.680522 [info ]: Success Set profile 'snowflake-poc2-dbt' in dbt_project.yml
+10:05:27.680780 [info ]: Validating profile inputs, adapters, and connection
+
+10:05:27.680992 [info ]: dbt 2.0.12
+10:05:27.681543 [info ]: Started loading project
+10:05:27.684314 [info ]: Loading ~/.dbt/profiles.yml
+10:05:27.686557 [info ]: Finished loading project [  0.01s]
+10:05:27.686986 [info ]: Started debugging
+10:05:27.687215 [info ]: Debugging profile: dev
+10:05:27.687543 [info ]: Debugging dbt version: 2.0.12
+10:05:27.688065 [info ]: Debugging platform: windows x86_64 (windows)
+10:05:27.688243 [info ]: Debugging adapter type: snowflake (remote)
+10:05:28.009210 [info ]: Debugging dependencies:
+  git: OK
+10:05:28.009956 [info ]: Debugging connection:
+  "authenticator": "snowflake_jwt",
+  "account": "LWQFPBI-HMB16710",
+  "user": "POC2_TERRAFORM_SERVICE",
+  "database": "POC2_DB",
+  "warehouse": "COMPUTE_WH",
+  "schema": "RAW",
+  "role": "POC2_TERRAFORM_ADMIN_ROLE"
+10:05:28.012259 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.21
+10:05:29.830375 [debug]: borrow_tlocal_connection() took 1.8185933s
+10:05:29.832382 [debug]: create_debug_span(...).entered() took 53.9µs
+10:05:30.338666 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 505.5281ms
+10:05:30.338698 [debug]: reader.schema() took 4.3µs
+10:05:30.352806 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 520.3804ms
+10:05:30.353431 [debug]: concat_batches + normalize_result_column_names took 583.4µs
+10:05:30.353506 [debug]: record_current_span_status_from_attrs took 64.4µs
+10:05:30.353523 [debug]: Query executed on node unknown:
+select 1 as id
+10:05:30.353557 [debug]: drop(query_span_guard) (span exit/export) took 45.2µs
+10:05:30.353821 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 523.4026ms
+10:05:30.353882 [info ]: Debugging connection test: OK (2.3s)
+10:05:30.358825 [info ]: Debugged All checks passed!
+10:05:30.359359 [info ]: Finished debugging [  2.67s]
+10:05:30.448212 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [57.0s]

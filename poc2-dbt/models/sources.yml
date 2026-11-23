@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw
+    database: POC2_DB
+    schema: RAW
+
+    tables:
+      - name: LANDING_CUSTOMERS
+      - name: LANDING_PRODUCTS
+      - name: LANDING_ORDERS
